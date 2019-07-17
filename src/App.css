@@ -1,10 +1,35 @@
+body{
+  background: snow;
+}
+#root{
+  padding: 10px;
+}
+header, section, div, p, h1, h2, h3, h4, h4, h6,
+address, footer{
+  margin: 0;
+  padding: 0;
+}
 .App {
+  background: white;
+  box-shadow: 0px 0px 6px 3px rgba(0,0,0,0.28);
   margin: auto;
-  max-width: 990px;
+  max-width: 1000px;
   font-family: 'Montserrat', sans-serif;
+  padding: 20px;
+}
+header h1{
+  padding: 20px;
 }
 section{
   border-bottom: 1px solid black;
+}
+h2{
+  padding: 30px 0px 10px 0px;
+}
+h4{
+  padding: 10px 0px;
+  font-size: 0.9em;
+  text-transform: uppercase;
 }
 .header-section{
   text-align: center;
@@ -15,4 +40,42 @@ p{
   font-size: 0.9em;
   line-height: 1.6em;
   letter-spacing: .06em;
+}
+section p:last-child{
+  padding-bottom: 40px;
+}
+.flex{
+  padding-top:10px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  text-transform: uppercase;
+  font-weight: 600;
+  align-items: center;
+}
+.flex h4{
+  padding: 0px;
+  padding-right: 30px;
+}
+.flex + h4{
+  padding-top: 0px;
+}
+.flex span{
+  display: block;
+  font-size: 0.9em;
+}
+.edu-header + h4{
+  text-transform: none;
+  font-weight: 400;
+}
+section .education:last-child{
+  padding-bottom: 30px;
+}
+footer img{
+  max-width: 300px;
+}
+footer span{
+  display: inline-block;
+  font-weight: 600;
+  padding-bottom: 10px;
 }
